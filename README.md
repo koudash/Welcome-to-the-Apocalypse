@@ -14,7 +14,3 @@ We plan to examine United States specific natural disasters over the past 70 yea
 
 
 App has been created to visually show the data and analysis results in html. Heroku deployment can be accessed through <a href="https://apocalypse-database.herokuapp.com/">here</a>.
-
-A screenshot is posted below.
-
-<img src="./static/images/HTML Screenshot.png" alt="HTML Screenshot">
