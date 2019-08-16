@@ -104,37 +104,3 @@ select option {
     color: #ffffff;
     font-size: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-/* https://stackoverflow.com/questions/34143736/css-circle-border-with-various-colors */
-#red {
-    stroke: red;
-    stroke-dasharray: 39, 157; /* length of arc, circumference of circle (interval)*/
-    stroke-dashoffset: -19.625; /* offset of arc from start point */
-}
-
-#orange {
-    stroke: yellow;
-    stroke-dasharray: 39, 157; /* length of arc, circumference of circle */
-    stroke-dashoffset: -58.875; /* offset of arc from start point */
-}
-
-#blue {
-    stroke: blue;
-    stroke-dasharray: 39, 157; /* length of arc, circumference of circle */
-    stroke-dashoffset: -98.125; /* offset of  arc from start point */
-}
-
-#green {
-    stroke: green;
-    stroke-dasharray: 39, 157; /* length of arc, circumference of circle */
-    stroke-dashoffset: -137.375; /* offset of arc from start point */
-}
