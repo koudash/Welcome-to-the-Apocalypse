@@ -6,11 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Apocalypse</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Bootstrap jQuery and Popper.js -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- "Sketchy" theme from Bootswatch -->
         <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
         <!-- Leaflet CSS & JS -->
@@ -30,11 +34,10 @@
             crossorigin=""></script>
         <!-- Local style CSS -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-        <!-- Avoid fake favicon requests -->
-        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon-nat-disas.png') }}">
     </head>
     <body>
-
         <div class="container-fluid black-bkgd">
             <div class="row">
                 <div class="col-12 text-white">
@@ -48,7 +51,6 @@
                 </div>
             </div>
         </div>
-
         <div id="map"></div>
         <select>
             <option value="placeholder" selected hidden>Select a Chart</option>
@@ -57,7 +59,6 @@
             <option value="chart-displaced">Displaced by Disasters</option>
             <option value="chart-ecolost">Economic Damage by Disasters</option>
         </select>
-
         <div class="container">
             <div class="row charts">
                 <div class="col-11 mt-5 disaster hide load-hidden" id="chart-reportedcase"></div>
@@ -66,7 +67,6 @@
                 <div class="col-11 mt-5 disaster hide load-hidden" id="chart-ecolost"></div>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
                 <div class="col-12 text-white mt-5">
@@ -74,17 +74,20 @@
                         <h3>Attributions</h3>
                         <p>
                             <ul>
-                                <li>The International Disaster Database (EM-DAT): <a href="https://www.emdat.be/emdat_db/" style="color: #ffffff">https://www.emdat.be/emdat_db/</a></li>
-                                <li>National Centers for Environmental Information (NOAA): <a href="https://www.ngdc.noaa.gov/" style="color: #ffffff">https://www.ngdc.noaa.gov/</a></li>
-                                <li>Redstapler: <a href="https://redstapler.co/three-js-realistic-rain-tutorial/" style="color: #ffffff">https://redstapler.co/three-js-realistic-rain-tutorial/</a></li>
-                                <li>Webscraped: <a href="https://ourworldindata.org/ofdacred-international-disaster-data" style="color: #ffffff">https://ourworldindata.org/ofdacred-international-disaster-data</a></li>
+                                <li>The International Disaster Database (EM-DAT): <a href="https://www.emdat.be/emdat_db/" 
+                                    style="color: #ffffff">https://www.emdat.be/emdat_db/</a></li>
+                                <li>National Centers for Environmental Information (NOAA): <a href="https://www.ngdc.noaa.gov/" 
+                                    style="color: #ffffff">https://www.ngdc.noaa.gov/</a></li>
+                                <li>Redstapler: <a href="https://redstapler.co/three-js-realistic-rain-tutorial/" 
+                                    style="color: #ffffff">https://redstapler.co/three-js-realistic-rain-tutorial/</a></li>
+                                <li>Webscraped: <a href="https://ourworldindata.org/ofdacred-international-disaster-data" 
+                                    style="color: #ffffff">https://ourworldindata.org/ofdacred-international-disaster-data</a></li>
                             </ul>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="text-white" id="footer"><hr id="hr-footer">Andrea, Elsa, Lei, Ovais</div>
     </div>
     <script src="https://d3js.org/d3.v5.min.js"></script>

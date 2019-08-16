@@ -29,7 +29,7 @@ d3.json("/data_map").then((data) => {
     // Icon attribution: https://www.onlinewebfonts.com/; https://imgbin.com/
     // Define each icon
     disasType[key]["icon"] = L.icon({
-      iconUrl: `static/image/${key}.png`,
+      iconUrl: `static/images/${key}.png`,
       iconSize: [20, 20]
     });
   });
